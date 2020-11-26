@@ -1,5 +1,199 @@
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;   
+  margin: 0;
+  padding: 0;
 }
 
+body{
+  background-color: #f6f6f6;
+  font-family: 'Averta', helvetica, arial, sans-serif;
+  width: 100%;
+}
+
+/* Flexbox - Oefening 2 */
+header {
+  background-color: rgb(2, 108, 223);
+  background-image: linear-gradient(90deg, rgb(1, 80, 167), rgb(2, 108, 223), rgb(1, 80, 167));
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 1em;
+}
+
+header img {
+  flex-grow: 1;
+  max-width: 10%;
+  padding: 0.5em;
+}
+.logo{
+  max-width: 80%;
+}
+
+header form {
+  display:flex;
+  flex-grow: 4;
+  left: 0;
+  right: 0;
+  color: white;
+  border: 1px solid white;
+  max-height: 2em;
+}
+
+header form input{
+  flex-grow: 1;
+  max-width: 80%;
+  padding: 8px 0 8px 16px;
+  border: none;
+  background-color: transparent;
+  font-size: inherit;
+}
+::placeholder {
+  color: white;
+}
+
+header form button {
+  color: black;
+}
+
+section:first-of-type {
+  position:relative;
+}
+
+.headerimg{
+  width: 100%;
+}
+
+.concerten{
+  padding: 0 16px;
+}
+
+.concerten ul{
+  padding: 24px;
+}
+
+.cocnerten li{
+  padding: 0 0 24px 0;
+}
+
+h1 {
+  position: absolute;
+  color: white;
+  padding: 24px 16px;
+  bottom: 1em;
+}
+
+h2{
+  left: 50%;
+  border-bottom: 4px solid rgb(197, 107, 255);
+  width: 40px;
+}
+
+h3 {
+  color: rgb(38, 38, 38);
+  margin: 8px 0 4px 0;
+}
+
+.tickets{
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  border: 1px solid transparent;
+  padding: 8px 24px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 108, 223);
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul:nth-child(1){
+  flex-wrap: wrap;
+}
+
+.aanbevolen{
+  padding: 24px 16px;
+}
+
+.aanbevolen ul{
+  flex-wrap:wrap;
+  margin: 24px 0 0 0;
+}
+
+.aanbevolen li {
+  margin: 0 4px 24px 4px;
+}
+
+.aanbevolen img {
+  width: 100%;
+}
+
+.aanbevolen p:first-of-type{
+  font-size: 16px;
+  margin: 12px 0 8px 0;
+}
+
+.aanbevolen p:nth-of-type(2){
+  color: rgb(100, 100, 100);
+}
+
+.populair{
+  overflow-x:auto;
+}
+
+.populair li {
+  flex-shrink:0;
+  margin: 0 8px;
+}
+
+.aanbevolen span {
+  background-color: transparent;
+  color: rgb(2, 108, 223);
+  padding: 0;
+  border: none;
+  font-weight: bold;
+}
+.aanbevolen p{
+  margin: 12px 0;
+}
+
+.aanbevolen button {
+  border: 1px solid rgb(2, 108, 223);
+  background-color: transparent;
+  color: rgb(2, 108, 223);
+  font-size: 16px;
+  padding: 8px 24px;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+footer{
+  background-color: rgb(31, 38, 45);
+  flex-shrink: 0;
+  padding: 0 16px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  flex-direction: column;
+}
+
+footer .logo{
+  max-width: 60%;
+}
+
+footer h3{
+  display: flex;
+  color: white;
+}
+
+footer img{
+  padding: 10px 20px 10px 0;
+}

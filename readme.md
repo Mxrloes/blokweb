@@ -6,8 +6,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
+1. https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element
+2. https://codepen.io/Mxrloes/pen/gOMydyp
 3. -...-
 
 
@@ -38,11 +38,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Het begin ging wel goed maar de details waren lastig.
+
+Ik heb erg lopen stoeien met de header en footer, steeds wilde het juiste plaatje niet naar de volgende regel gaan.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/week3" width="375px" alt="home pagina">
+De homepagina, hier ben ik al best ver, alleen loop met nog een paar dingen te stoeien.
+
+<img src="images/week3pinkpop" width="375px" alt="pinkpop pagina">
+De Pinkpop pagina, hier heb ik alleen nog maar de content erop gezet.
 
 ### Agenda voor meeting
 
