@@ -44,10 +44,10 @@ Ik heb erg lopen stoeien met de header en footer, steeds wilde het juiste plaatj
 
 **Screenshot(s):**
 
-<img src="images/week3" width="375px" alt="home pagina">
+<img src="images/week3.png" width="375px" alt="home pagina">
 De homepagina, hier ben ik al best ver, alleen loop met nog een paar dingen te stoeien.
 
-<img src="images/week3pinkpop" width="375px" alt="pinkpop pagina">
+<img src="images/week3pinkpop.png" width="375px" alt="pinkpop pagina">
 De Pinkpop pagina, hier heb ik alleen nog maar de content erop gezet.
 
 ### Agenda voor meeting
