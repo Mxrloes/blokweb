@@ -8,8 +8,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 1. https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element
 2. https://codepen.io/Mxrloes/pen/gOMydyp
-3. -...-
-
+3. https://developer.mozilla.org/en-US/docs/Web/CSS/::after
+4. https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
+5. https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/
 
 
 ## Eindgesprek (week 7/8)
@@ -30,7 +31,19 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+Ik ben deze weken bezig geweest met de tweede pagina, voor het grootste gedeelte is deze nu af en ga ik hierna bezig om de website responsive te maken.
+
+**Screenshot(s):**
+
+<img src="images/week5.png" width="375px" alt="home pagina">
+De homepagina, is nu bijna af, alleen de footer kloppen de links nog niet.
+
+<img src="images/week5pinkpop.png" width="375px" alt="pinkpop pagina">
+De Pinkpop pagina, hier ben ik de afgelopen weken het meeste mee bezig geweest. Deze is bijna af, alleen het FAQ gedeelte klopt nog niet, de tekst in de header afbeelding en de evenementen. 
+
+### Verslag van meeting
 
 
 
@@ -50,19 +63,9 @@ De homepagina, hier ben ik al best ver, alleen loop met nog een paar dingen te s
 <img src="images/week3pinkpop.png" width="375px" alt="pinkpop pagina">
 De Pinkpop pagina, hier heb ik alleen nog maar de content erop gezet.
 
-### Agenda voor meeting
-
--samen met je groepje opstellen-
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Ik was al goed opweg en verder dan de docent verwacht had, code zag er netjes uit alleen moest ik sommige sections classes geven ipv de elementen. Verder heb ik goede feedback gehad op een paar punten waarop ik vast liep zoals het logo en de afbeelding in de eerste section een achtergrond maken.
 
 
 
