@@ -25,7 +25,19 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+
+Deze week ben ik niet heel veel bezig geweest met de website en heb alleen een beetje de feedback verwerkt. Ik heb nogsteeds moeite met het evenementen blokje en de styling hiervan.
+
+**Screenshot(s):**
+
+<img src="images/week6.png" width="375px" alt="home pagina week 6">
+De homepagina, hier heb ik niet zo heel veel veranderd wel kloppen eindelijk de buttons in de footer.
+
+<img src="images/week6pinkpop.png" width="375px" alt="pinkpop pagina week 6">
+De Pinkpop pagina hier heb ik onderandere het evenementen gedeelte aangepast en de tekst in de header afbeelding staat nu goed.
+
+### Verslag van meeting
 
 
 
@@ -37,14 +49,14 @@ Ik ben deze weken bezig geweest met de tweede pagina, voor het grootste gedeelte
 
 **Screenshot(s):**
 
-<img src="images/week5.png" width="375px" alt="home pagina">
+<img src="images/week5.png" width="375px" alt="home pagina week 5">
 De homepagina, is nu bijna af, alleen de footer kloppen de links nog niet.
 
-<img src="images/week5pinkpop.png" width="375px" alt="pinkpop pagina">
+<img src="images/week5pinkpop.png" width="375px" alt="pinkpop pagina week 5">
 De Pinkpop pagina, hier ben ik de afgelopen weken het meeste mee bezig geweest. Deze is bijna af, alleen het FAQ gedeelte klopt nog niet, de tekst in de header afbeelding en de evenementen. 
 
 ### Verslag van meeting
-
+De meeting ging goed, heb goede feedback gekregen op wat punten waarop ik vast liep en tips gehad voor hoe ik dingen beter kan doen zoals een main toevoegen en die een padding geven.
 
 
 ## Voortgang 1 (week 3)
@@ -57,10 +69,10 @@ Ik heb erg lopen stoeien met de header en footer, steeds wilde het juiste plaatj
 
 **Screenshot(s):**
 
-<img src="images/week3.png" width="375px" alt="home pagina">
+<img src="images/week3.png" width="375px" alt="home pagina week 3">
 De homepagina, hier ben ik al best ver, alleen loop met nog een paar dingen te stoeien.
 
-<img src="images/week3pinkpop.png" width="375px" alt="pinkpop pagina">
+<img src="images/week3pinkpop.png" width="375px" alt="pinkpop pagina week 3">
 De Pinkpop pagina, hier heb ik alleen nog maar de content erop gezet.
 
 ### Verslag van meeting
