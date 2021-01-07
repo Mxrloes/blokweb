@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<title>Tickets voor Concerten, Festivals, Poppodia | Koop je kaarten op Ticketmaster.nl</title>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<link href="styles/style.css" rel="stylesheet">
@@ -13,143 +13,220 @@
 
 <body>
 	<header>
-		<img src="images/menu.svg" alt="Menu icoon">
-		<img class="logo" src="images/ticketmaster-5.svg" alt="Ticketmaster logo">
+		<!--Media queries opdracht 3-->
+		<nav>
+			<button aria-hidden="true"></button>
+			<ul>
+				<li><a href="#">Muziek</a></li>
+				<li><a href="#">Comedy</a></li>
+				<li><a href="#">Sport</a></li>
+				<li><a href="#">Festivals</a></li>
+				<li><a href="#">Familie</a></li>
+				<li><a href="#">Theater &amp; Cultuur</a></li>
+				<li><a href="#">Beurzen &amp; Exposities</a></li>
+			</ul>
+		</nav>
+		<a href="index.html"><img class="logo" src="images/ticketmaster-5.svg" alt="Ticketmaster logo"></a>
 		<img src="images/account.svg" alt="Account icoon">
 		<form>
 			<input type="text" placeholder="Zoek op artiest, evenement of locatie" name="search">
-			<input type="image" src="images/search.svg" name="saveForm"/>
+			<input type="image" src="images/search.svg" name="saveForm" alt="Zoek icoon" />
 			<!-- https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
-		  </form>
-		 
-	</header>    
+		</form>
+	</header>
 	<section class="headerimg">
 		<h1>
 			COVID-19 en evenementen
 		</h1>
-		<a class="tickets" >Tickets </a>
+		<a class="tickets">Tickets </a>
 	</section>
 	<main>
-	<section class="concerten">
-		<ul>
-			<li>
-				<a>
-					<img src="images/YB_LIFE_ON_MARS_TOUR_368.png" alt="Yungblud">
-					<p>Concert</p>
-					<h3>Yungblud</h3>
-				</a>
-			</li>
-			<li>
-				<a>
-					<img src="images/LiveStreams_Website_Discover_368by207.jpg" alt="Livestreams">
-					<p>Muziek</p>
-					<h3>Livestreams</h3>
-				</a>
-			</li>
-			<li>
-				<a>
-					<img src="images/NBT368.jpg" alt="Nothin But Thieves">
-					<p>Muziek</p>
-					<h3>Nothing But Thieves</h3>
-				</a>
-			</li>
-			<li>
-				<a>
-					<img src="images/DuaLipa_livestream_368.jpeg" alt="Dua Lipa">
-					<p>Livestream</p>
-					<h3>Dua Lipa</h3>
-				</a>
-			</li>
-		</ul>
-	</section>
-	<hr>
-	<section class="populair">
-		<h2>POPULAIR</h2>
-		<ul>
-			<li>
-				<a href="pinkpop.html">
-					<img src="images/pp21-368.jpg" alt="Pinkpop 2021">
-					<p>Festival</p>
-					<h3>Pinkpop 2021</h3>
-				</a>
-			</li>
-			<li>
-				<a>
-					<img src="images/blog368.jpg" alt="Ticketmaster Blog">
-					<p>Blog</p>
-					<h3>Tickermaster Blog</h3>
-				</a>
-			</li>
-			<li>
-				<a>
-					<img src="images/jimmy-368.jpg" alt="Jimmy Carr">
-					<p>Comedy</p>
-					<h3>Jimmy Carr</h3>
-				</a>
-			</li>
-			<li>
-				<a>
-					<img src="images/Muziekfeest2019_Ticketmaster_Spotlight3_368x207.jpg" alt="Muziekfeest van het Jaar">
-					<p>Muziek</p>
-					<h3>Muziekfeest van het Jaar</h3>
-				</a>
-			</li>
-			<li>
-				<a>
-					<img src="images/daniel-368.jpg" alt="Daniel Sloss">
-					<p>Comedy</p>
-					<h3>Daniel Sloss</h3>
-				</a>
-			</li>
-		</ul>
-	</section>
-	<hr>
-	<section class="aanbevolen">
-		<h2>AANBEVOLEN</h2>
-		<ul>
-			<li>
-				<a>
-					<img src="images/TheKik_720.jpg" alt="The Kik">
-					<p>Muziek</p>
-					<h3>The Kik</h3>
-					<p>In november 2021 geeft The Kik met orkest een concert in Rotterdam Ahoy</p>
-					<span>TICKETS</span>
-				</a>
-			</li>
-			<li>
-				<a>
-					<img src="images/biffy720.jpg" alt="Biffy Clyro">
-					<p>Muziek</p>
-					<h3>Biffy Clyro</h3>
-					<p>A Celebration Of Endings, live in AFAS Live!</p>
-					<span>TICKETS</span>
-				</a>
-			</li>
-		</ul>
-	<button>Bekijk meer</button>
-	</section>
+		<section class="concerten">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/YB_LIFE_ON_MARS_TOUR_720.png" alt="Yungblud">
+						<p>Concert</p>
+						<h3>Yungblud</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/LiveStreams_Website_PopularTickets_720by405.jpg" alt="Livestreams">
+						<p>Muziek</p>
+						<h3>Livestreams</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/NBT720.jpg" alt="Nothin But Thieves">
+						<p>Muziek</p>
+						<h3>Nothing But Thieves</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/DuaLipa_livestream_720.jpeg" alt="Dua Lipa">
+						<p>Livestream</p>
+						<h3>Dua Lipa</h3>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<hr>
+		<section class="populair">
+			<h2>POPULAIR</h2>
+			<ul>
+				<li>
+					<a href="pinkpop.html">
+						<img src="images/pp21-368.jpg" alt="Pinkpop 2021">
+						<p>Festival</p>
+						<h3>Pinkpop 2021</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/blog368.jpg" alt="Ticketmaster Blog">
+						<p>Blog</p>
+						<h3>Tickermaster Blog</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/jimmy-368.jpg" alt="Jimmy Carr">
+						<p>Comedy</p>
+						<h3>Jimmy Carr</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/Muziekfeest2019_Ticketmaster_Spotlight3_368x207.jpg"
+							alt="Muziekfeest van het Jaar">
+						<p>Muziek</p>
+						<h3>Muziekfeest van het Jaar</h3>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/daniel-368.jpg" alt="Daniel Sloss">
+						<p>Comedy</p>
+						<h3>Daniel Sloss</h3>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<hr>
+		<section class="aanbevolen">
+			<h2>AANBEVOLEN</h2>
+				<section class="items">
+					<article>
+						<a href="#">
+							<img src="images/TheKik_720.jpg" alt="The Kik">
+							<p>Muziek</p>
+							<h3>The Kik</h3>
+							<p>In november 2021 geeft The Kik met orkest een concert in Rotterdam Ahoy</p>
+							<span>TICKETS</span>
+						</a>
+					</article>
+					<article>
+						<a href="#">
+							<img src="images/biffy720.jpg" alt="Biffy Clyro">
+							<p>Muziek</p>
+							<h3>Biffy Clyro</h3>
+							<p>A Celebration Of Endings, live in AFAS Live!</p>
+							<span>TICKETS</span>
+						</a>
+					</article>
+				</section>
+				<section class="meerItems">
+					<article>
+						<a href="#">
+							<img src="images/elbow720.jpg" alt="Elbow">
+							<p>Muziek</p>
+							<h3>Elboq</h3>
+							<p>Guy Garvey en zijn vrienden komen naar de Ziggo Dome!</p>
+							<span>TICKETS</span>
+						</a>
+					</article>
+					<article>
+						<a href="#">
+							<img src="images/Alanis720.jpg" alt="Alanis Morissette">
+							<p>Muziek</p>
+							<h3>Alanis Morissette</h3>
+							<p>Live in de Ziggo Dome voor het jubileum van haar doorbraakalbum Jagged Little Pill</p>
+							<span>TICKETS</span>
+						</a>
+					</article>
+					<article>
+						<a href="#">
+							<img src="images/bospop-720.jpg" alt="Bospop">
+							<p>Festival</p>
+							<h3>Bospop 2021</h3>
+							<p>Met o.a. Sting, Lionel Richie en Kensington</p>
+							<span>TICKETS</span>
+						</a>
+					</article>
+					<article>
+						<a href="#">
+							<img src="images/alan-parsons-720.jpg" alt="Alan Parsons">
+							<p>Muziek</p>
+							<h3>Alan Parsons Live Project</h3>
+							<p>The Turn Of A Friendly Card, live in Carré!</p>
+							<span>TICKETS</span>
+						</a>
+					</article>
+				</section>
+			<button id='laadMeerKnop'>Bekijk meer</button>
+		</section>
 	</main>
 	<footer>
-		<section>
-			<img class="logo" src="images/ticketmaster-5.svg" alt="Ticketmaster logo">
-			<h5>Volg ons</h5>
-			<img src="images/blog.svg" alt="Blog">
-			<img src="images/facebook.svg" alt="Facebook">
-			<img src="images/twitter.svg" alt="Twitter">
-			<img src="images/instagram.svg" alt="Instagram">
-			<img src="images/linkedin.svg" alt="LinkedIn">
-			<h5>Download onze Apps</h5>
-			<img src="images/appstore.svg" alt="App Store">
-			<img src="images/googleplay.svg" alt="Google Play">
-		</section>
-			<h5>Door verder te gaan op deze pagina, ga je akkoord met onze <a>voorwaarden voor gebruik</a></h5>
-			<button>Wij helpen je graag<img src="images/pijltjew.svg"></button>
-			<button>Wat wij ook hebben<img src="images/pijltjew.svg"></button>
-			<button>Over ons<img src="images/pijltjew.svg"></button>
-			<button>Doe zaken met ons<img src="images/pijltjew.svg"></button>
-		
+		<img class="logo" src="images/ticketmaster-5.svg" alt="Ticketmaster logo">
+		<h5>Volg ons</h5>
+		<img src="images/blog.svg" alt="Blog">
+		<img src="images/facebook.svg" alt="Facebook">
+		<img src="images/twitter.svg" alt="Twitter">
+		<img src="images/instagram.svg" alt="Instagram">
+		<img src="images/linkedin.svg" alt="LinkedIn">
+		<h5>Download onze Apps</h5>
+		<img src="images/appstore.svg" alt="App Store">
+		<img src="images/googleplay.svg" alt="Google Play">
+		<h5>Door verder te gaan op deze pagina, ga je akkoord met onze <a href="#">voorwaarden voor gebruik</a></h5>
+		<nav>
+			<button aria-hidden="true">Wij helpen je graag<img src="images/pijltjew.svg" alt="Pijltje icoon"></button>
+			<article>
+				<h3>Wij helpen je graag</h3>
+				<a href="#">Help</a>
+				<a href="#">Afgelaste events</a>
+				<a href="#">Verschoven events</a>
+				<a href="#">Verzekering</a>
+			</article>  
+			<button aria-hidden="true">Wat wij ook hebben<img src="images/pijltjew.svg" alt="Pijltje icoon"></button>
+			<article>
+				<h3>Wat wij ook hebben</h3>
+				<a href="#">Collector Tickets</a>
+				<a href="#">Gehoorbescherming</a>
+				<a href="#">Cadeaukaart</a>
+				<a href="#">Parkeren</a>
+				<a href="#">Platinum Tickets</a>
+				<a href="#">Verified Fan</a>
+				<a href="#">Treinretour</a>
+			</article>
+			<button aria-hidden="true">Over ons<img src="images/pijltjew.svg" alt="Pijltje icoon"></button>
+			<article>
+				<h3>Over ons</h3>
+				<a href="#">Branding</a>
+				<a href="#">Vacatures</a>
+			</article>
+			<button aria-hidden="true">Doe zaken met ons<img src="images/pijltjew.svg" alt="Pijltje icoon"></button>
+			<article>
+				<h3>Doe zaken met ons</h3>
+				<a href="#">Adverteren</a>
+				<a href="#">Affiliate worden</a>
+				<a href="#">Zelf een event organiseren</a>
+			</article>
+	  </nav>
 	</footer>
 	<script src="scripts/script.js"></script>
 </body>
-	
+
 </html>

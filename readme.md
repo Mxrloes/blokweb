@@ -11,17 +11,30 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 3. https://developer.mozilla.org/en-US/docs/Web/CSS/::after
 4. https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
 5. https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/
+6. https://codepen.io/robertspier/pen/VwKWKxZ
+7. https://stackoverflow.com/questions/2204634/how-to-disable-automatic-links-coloring-without-selecting-a-color
+8. https://stackoverflow.com/questions/10040842/add-border-bottom-to-table-row-tr
+
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+In de laatste weken heb ik veel aan het responsive maken van de website gewerkt, dit vond ik lastiger dan gedacht. Uiteindelijk is het wel geworden zoals ik wilde en ben daar best blij mee. Het evenementen blok is niet geworden zoals ik het wilde helaas.
 
 **Screenshot(s):**
 
 -screenshot(s) van je eindresultaat-
+<img src="images/eind.png" width="375px" alt="home pagina eindresultaat mobiel">
+Einderesultaat van de homepagina voor mobiel
 
+<img src="images/einddesktop.png" width="1875px" alt="home pagina eindresultaat desktop">
+Einderesultaat van de homepagina voor desktop
 
+<img src="images/eindpinkpop.png" width="375px" alt="pinkpop pagina eindresultaat mobiel">
+Einderesultaat van de pinkpoppagina voor mobiel
+
+<img src="images/eindpinkpopdekstop.png" width="1875px" alt="pinkpop pagina eindresultaat desktop">
+Einderesultaat van de pinkpoppagina voor desktop
 
 ## Voortgang 3 (week 6)
 
@@ -38,7 +51,7 @@ De homepagina, hier heb ik niet zo heel veel veranderd wel kloppen eindelijk de 
 De Pinkpop pagina hier heb ik onderandere het evenementen gedeelte aangepast en de tekst in de header afbeelding staat nu goed.
 
 ### Verslag van meeting
-
+De meeting ging weer erg goed, goede feedback gehad op de website en tips gehad over dingen waar ik tegen aan liep zoals het laten zien van meer items op mobiel en wat ik het beste met het evenementen blok kon doen. 
 
 
 ## Voortgang 2 (week 5)

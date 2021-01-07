@@ -1,36 +1,48 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Pinkpop Tickets | 18, 19 en 20 juni 2021 | Megaland, Landgraaf</title>
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-	<link href="styles/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="author" content="jouw naam">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pinkpop Tickets | 18, 19 en 20 juni 2021 | Megaland, Landgraaf</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="styles/style.css" rel="stylesheet">
 </head>
 
 <body>
-	<header class="headerpinkpop">
-		<img src="images/menu.svg" alt="Menu icoon">
-		<img class="logo" src="images/ticketmaster-5.svg" alt="Ticketmaster logo">
-		<img src="images/search.svg" alt="Zoek icoon">
-	    <img src="images/account.svg" alt="Account icoon">		 
-    </header>  
-	<section class="headerimgpinkpop">
+    <header>
+        <!--Media queries opdracht 3-->
+        <nav>
+            <button aria-hidden="true"></button>
+            <ul>
+                <li><a href="#">Muziek</a></li>
+                <li><a href="#">Comedy</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Festivals</a></li>
+                <li><a href="#">Familie</a></li>
+                <li><a href="#">Theater &amp; Cultuur</a></li>
+                <li><a href="#">Beurzen &amp; Exposities</a></li>
+            </ul>
+        </nav>
+        <a href="index.html"><img class="logo" src="images/ticketmaster-5.svg" alt="Ticketmaster logo"></a>
+        <img src="images/search.svg" alt="Zoek icoon">
+        <img src="images/account.svg" alt="Account icoon">
+    </header>
+    <section class="headerimgpinkpop">
         <ul>
             <li>
-               <a>Home</a>
+                <a href="#">Home</a>
             </li>
             <li>
-                <a>Festivals</a>
+                <a href="#">Festivals</a>
             </li>
             <li>
-                <a>Muziekfestival</a>
+                <a href="#">Muziekfestival</a>
             </li>
             <li>
-                <a>Pinkpop</a>
+                <a href="#">Pinkpop</a>
             </li>
         </ul>
         <article>
@@ -39,9 +51,9 @@
                 Pinkpop
             </h1>
         </article>
-    </section> 
+    </section>
     <section class="menu">
-        <a>Tickets</a> 
+        <a href="#">Tickets</a>
         <nav>
             <ul>
                 <li>
@@ -60,169 +72,334 @@
         </nav>
     </section>
     <main>
-	<section class="lineup">
-        <h2>LINE-UP</h2>
-        <h3>Vrijday</h3>
+        <section class="lineup">
+            <h2>LINE-UP</h2>
+            <h3>Vrijday</h3>
             <ul>
                 <li>
-                    <a>Red Hot Chili Peppers</a> 
+                    <a href="#">Red Hot Chili Peppers</a>
                 </li>
                 <li>
-                    <a>Twenty One Pilots</a>
+                    <a href="#">Twenty One Pilots</a>
                 </li>
                 <li>
-                    <a>Kensington</a>
+                    <a href="#">Kensington</a>
                 </li>
                 <li>
-                    <a>Frenna Deluxe</a>
+                    <a href="#">Frenna Deluxe</a>
                 </li>
                 <li>
-                    <a>JC Stewart</a>
+                    <a href="#">JC Stewart</a>
                 </li>
                 <li>
-                    <a>Ten Times A Million</a>
+                    <a href="#">Ten Times A Million</a>
                 </li>
             </ul>
-        <h3>Zaterdag</h3>
-        <ul>
-            <li>
-                <a>Deftones</a>
-            </li>
-            <li>
-                <a>Joost</a>
-            </li>
-            <li>
-                <a>Danny Vera</a>
-            </li>
-            <li>
-                <a>Nona</a>
-            </li>
-        </ul>
-        <h3>Zondag</h3>
-        <ul>
-            <li>
-                <a>Pearl Jam</a>
-            </li>
-            <li>
-                <a>The Kik</a>
-            </li>
-            <li>
-                <a>Ares</a>
-            </li>
-        </ul>
-        <hr>
-        <h3>Er worden nog meer acts aangekondigd</h2>
-        <p>Houd deze pagina en <a>www.pinkpop.nl</a> in de gaten.</p>
-    </section>
-	<section class="evenementen">
-        <h2>EVENEMENTEN</h2>
-        <article>
-            <p>7 Resultaten</p>
-            <button>Datumselectie</button>
-            <h3>Nederland</h3>
-            <p>7 EVENEMENTEN</p>
+            <h3>Zaterdag</h3>
+            <ul>
+                <li>
+                    <a href="#">Deftones</a>
+                </li>
+                <li>
+                    <a href="#">Joost</a>
+                </li>
+                <li>
+                    <a href="#">Danny Vera</a>
+                </li>
+                <li>
+                    <a href="#">Nona</a>
+                </li>
+            </ul>
+            <h3>Zondag</h3>
+            <ul>
+                <li>
+                    <a href="#">Pearl Jam</a>
+                </li>
+                <li>
+                    <a href="#">The Kik</a>
+                </li>
+                <li>
+                    <a href="#">Ares</a>
+                </li>
+            </ul>
             <hr>
+            <h3>Er worden nog meer acts aangekondigd</h3>
+                <p>Houd deze pagina en <a href="#">www.pinkpop.nl</a> in de gaten.</p>
+        </section>
+        <section class="evenementen">
+            <h2>EVENEMENTEN</h2>
+            <article>
+                <table>
+                    <tr class="rij">
+                        <td colspan=2>
+                            7 Resultaten
+                        </td>
+                        <td><button>Datumselectie</button></td>
+                    </tr>
+                    <tr class="rij">
+                        <td colspan=3>
+                            <h3>Nederland</h3>
+                            <p>7 EVENEMENTEN</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>JUN</h4>
+                        </td>
+                        <td>
+                            Vr - 13:15
+                        </td>
+                        <td rowspan="3"><a>Tickets</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>18</h4>
+                        </td>
+                        <td>
+                            Megaland - Landgraaf
+                        </td>
+                    </tr>
+                    <tr class="rij">
+                        <td>
+                            <h4>2021</h4>
+                        </td>
+                        <td>
+                            Pinkpop 2021 (Vrijdag)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h4>JUN</h4>
+                        </td>
+                        <td>
+                            Vr
+                        </td>
+                        <td rowspan="3"><a>Tickets</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>18</h4>
+                        </td>
+                        <td>
+                            Megaland - Landgraaf
+                        </td>
+                    </tr>
+                    <tr class="rij">
+                        <td>
+                            <h4>2021</h4>
+                        </td>
+                        <td>
+                            <p>Pinkpop 2021 (3-dagenkaart) incl. camping vanaf donderdag 17/6 18:00</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h4>JUN</h4>
+                        </td>
+                        <td>
+                            Za - 13:00
+                        </td>
+                        <td rowspan="3"><a>Tickets</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>19</h4>
+                        </td>
+                        <td>
+                            Megaland - Landgraaf
+                        </td>
+                    </tr>
+                    <tr class="rij">
+                        <td>
+                            <h4>2021</h4>
+                        </td>
+                        <td>
+                            Pinkpop 2021 (Zaterdag)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>JUN</h4>
+                        </td>
+                        <td>
+                            Zo - 13:00
+                        </td>
+                        <td rowspan="3"><a>Tickets</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>20</h4>
+                        </td>
+                        <td>
+                            Megaland - Landgraaf
+                        </td>
+                    </tr>
+                    <tr class="rij">
+                        <td>
+                            <h4>2021</h4>
+                        </td>
+                        <td>
+                            Pinkpop 2021 (Zondag)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td rowspan="3"><a>Tickets</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            Ticketmaster Nederland - Den Haag
+                        </td>
+                    </tr>
+                    <tr class="rij">
+                        <td>
+                        </td>
+                        <td>
+                            Pinkpop Sokken (roze)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            Ticketmaster Nederland - Den Haag
+                        </td>
+                    </tr>
+                    <tr class="rij">
+                        <td>
+                        </td>
+                        <td>
+                            Pinkpop mokken
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            Ticketmaster Nederland - Den Haag
+                        </td>
+                    </tr>
+                    <tr class="rij">
+                        <td>
+                        </td>
+                        <td>
+                            Zonnebril Bamboo
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><button>Terug naar boven</button></td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <section class="gallerij">
+            <h2>GALLERIJ</h2>
             <ul>
                 <li>
-                    <h4>JUN 18 2021</h4>
-                    <p>Vr - 13:15</p>
-                    <p>Megaland - Landgraaf</p>
-                    <p>Pinkpop 2021 (Vrijdag)</p>
+                    <img src="images/5519cfb9-87a1-45e9-9482-81461fd96158_2019_Pinkpop_photo-Ben-Houdijk_lr-34.jpg"
+                        alt="Pinkpop podium">
                 </li>
                 <li>
-                    <h4>JUN 18 2021</h4>
-                    <p>Vr</p>
-                    <p>Megaland - Landgraaf</p>
-                    <p>Pinkpop 2021 (3-dagenkaart) incl. camping vanaf donderdag 17/6 18:00</p>
+                    <img src="images/46509df9-1726-4729-8a95-7c55a996f8dc_2019_Pinkpop_photo-Ben-Houdijk_lr-27.jpg"
+                        alt="Jan Smeets">
                 </li>
                 <li>
-                    <h4>JUN 19 2021</h4>
-                    <p>Za - 13:00</p>
-                    <p>Megaland - Landgraaf</p>
-                    <p>Pinkpop 2021 (Zaterdag)</p>
+                    <img src="images/ba88e346-29f5-4132-b7af-657bb52bbb3d_2019_Pinkpop_photo-Ben-Houdijk_lr-65.jpg"
+                        alt="Mensen voor het prodium">
                 </li>
                 <li>
-                    <h4>JUN 20 2021</h4>
-                    <p>Zo - 13:00</p>
-                    <p>Megaland - Landgraaf</p>
-                    <p>Pinkpop 2021 (Zondag)</p>
-                </li>
-                <li>
-                    <p>Ticketmaster Nederland - Den Haag</p>
-                    <p>Pinkpop Sokken (roze)</p>
-                </li>
-                <li>
-                    <p>Ticketmaster Nederland - Den Haag</p>
-                    <p>Pinkpop mokken</p>
-                </li>
-                <li>
-                    <p>Ticketmaster Nederland - Den Haag</p>
-                    <p>Zonnebril Bamboo</p>
+                    <img src="images/4d71d86c-7dba-47c7-adfb-5c16354d6fb8_2018_Pinkpop_Photo-Ben-Houdijk_LR-0713.jpg"
+                        alt="Mensen met een vlag">
                 </li>
             </ul>
-        <button>Terug naar boven</button>
-        </article>
-	</section>
-    <section class="gallerij">
-        <h2>GALLERIJ</h2>
-        <ul>
-            <li>
-                <img src="images/5519cfb9-87a1-45e9-9482-81461fd96158_2019_Pinkpop_photo-Ben-Houdijk_lr-34.jpg" alt="Pinkpop podium"> 
-            </li>
-            <li>
-                <img src="images/46509df9-1726-4729-8a95-7c55a996f8dc_2019_Pinkpop_photo-Ben-Houdijk_lr-27.jpg" alt="Jan Smeets"> 
-            </li>
-            <li>
-                <img src="images/ba88e346-29f5-4132-b7af-657bb52bbb3d_2019_Pinkpop_photo-Ben-Houdijk_lr-65.jpg" alt="Mensen voor het prodium"> 
-            </li>
-            <li>
-                <img src="images/4d71d86c-7dba-47c7-adfb-5c16354d6fb8_2018_Pinkpop_Photo-Ben-Houdijk_LR-0713.jpg" alt="Mensen met een vlag"> 
-            </li>
+        </section>
+        <section class="over">
+            <img src="images/0738d4d1-9fdf-4d84-899b-bc8cbc4bf66b_2019_Pinkpop_photo-Ben-Houdijk_lr-2.jpg"
+                alt="Mensen bij de ingang van Pinkpop">
+            <h2>OVER</h2>
+            <h4>'Pop met Pinksteren</h4>
+            <p>Pinkpop, Nederlands oudste en bekendste popfestival, vond in 1970 voor het eerst plaats op
+                pinkstermaandag 18 mei in Geleen. De naam ‘Pinkpop’ komt natuurlijk van ‘Pop met Pinksteren’ en het
+                festival wordt doorgaans in het pinksterweekend georganiseerd, met uitzondering van de edities in 2008,
+                2010, 2013, 2015 en 2016. Het festival was aanvankelijk een eendaags festival maar groeide uit tot een
+                meerdaagse happening in Geleen, Baarlo (eenmalig) en later uiteindelijk Landgraaf. Het festival is
+                inmiddels niet meer weg te denken uit de Nederlandse festivalscène.</p>
+            <button>Toon minder</button>
+        </section>
+        <hr>
+        <section class="faq">
+            <h2>FAQ</h2>
+            <button>Watis Pinkpop?<img src="images/pijltje.svg" alt="Pijltje icoon"></button>
 
-        </ul>
-    </section>
-    <section class="over"> 
-        <img src="images/0738d4d1-9fdf-4d84-899b-bc8cbc4bf66b_2019_Pinkpop_photo-Ben-Houdijk_lr-2.jpg" alt="Mensen bij de ingang van Pinkpop"> 
-        <h2>OVER</h2>
-        <h4>'Pop met Pinksteren</h4>
-        <p>Pinkpop, Nederlands oudste en bekendste popfestival, vond in 1970 voor het eerst plaats op pinkstermaandag 18 mei in Geleen. De naam ‘Pinkpop’ komt natuurlijk van ‘Pop met Pinksteren’ en het festival wordt doorgaans in het pinksterweekend georganiseerd, met uitzondering van de edities in 2008, 2010, 2013, 2015 en 2016. Het festival was aanvankelijk een eendaags festival maar groeide uit tot een meerdaagse happening in Geleen, Baarlo (eenmalig) en later uiteindelijk Landgraaf. Het festival is inmiddels niet meer weg te denken uit de Nederlandse festivalscène.</p>
-        <button>Toon minder</button>
-       
-    </section>
-    <hr>
-    <section class="faq">
-        <h2>FAQ</h2>
-        <button>Watis Pinkpop?<img src="images/pijltje.svg"></button>
-       
-        <button>Wanneer is Pinkpop 2021?<img src="images/pijltje.svg"></button>
-        <button>Kan ik mijn Pinkpop tickets van 2020 bewaren voor de editie van 2021?<img src="images/pijltje.svg"></button>
-        <button>Is er een minimum leeftijd om Pinkpop te bezoeken?<img src="images/pijltje.svg"></button>
-    </section>    
+            <button>Wanneer is Pinkpop 2021?<img src="images/pijltje.svg" alt="Pijltje icoon"></button>
+            <button>Kan ik mijn Pinkpop tickets van 2020 bewaren voor de editie van 2021?<img
+                    src="images/pijltje.svg" alt="Pijltje icoon"></button>
+            <button>Is er een minimum leeftijd om Pinkpop te bezoeken?<img src="images/pijltje.svg" alt="Pijltje icoon"></button>
+        </section>
     </main>
     <section class="aftellen">
         <h2>AFTELLEN</h2>
+        <article>
+            <h3>161 Dagen</h3>
+            <h3>11 Uren</h3>
+            <h3>28 Min</h3>
+            <h3>15 Secs</h3>
+        </article>
     </section>
-	<footer>
-		<section>
-			<img class="logo" src="images/ticketmaster-5.svg" alt="Ticketmaster logo">
-			<h5>Volg ons</h5>
-			<img src="images/blog.svg" alt="Blog">
-			<img src="images/facebook.svg" alt="Facebook">
-			<img src="images/twitter.svg" alt="Twitter">
-			<img src="images/instagram.svg" alt="Instagram">
-			<img src="images/linkedin.svg" alt="LinkedIn">
-			<h5>Download onze Apps</h5>
-			<img src="images/appstore.svg" alt="App Store">
-			<img src="images/googleplay.svg" alt="Google Play">
-		</section>
-			<h5>Door verder te gaan op deze pagina, ga je akkoord met onze <a>voorwaarden voor gebruik</a></h5>
-			<button>Wij helpen je graag<img src="images/pijltjew.svg"></button>
-			<button>Wat wij ook hebben<img src="images/pijltjew.svg"></button>
-			<button>Over ons<img src="images/pijltjew.svg"></button>
-			<button>Doe zaken met ons<img src="images/pijltjew.svg"></button>
-		
-	</footer>
-	<script src="scripts/script.js"></script>
+    <footer>
+        <img class="logo" src="images/ticketmaster-5.svg" alt="Ticketmaster logo">
+        <h5>Volg ons</h5>
+        <img src="images/blog.svg" alt="Blog">
+        <img src="images/facebook.svg" alt="Facebook">
+        <img src="images/twitter.svg" alt="Twitter">
+        <img src="images/instagram.svg" alt="Instagram">
+        <img src="images/linkedin.svg" alt="LinkedIn">
+        <h5>Download onze Apps</h5>
+        <img src="images/appstore.svg" alt="App Store">
+        <img src="images/googleplay.svg" alt="Google Play">
+        <h5>Door verder te gaan op deze pagina, ga je akkoord met onze <a href="#">voorwaarden voor gebruik</a></h5>
+        <nav>
+			<button aria-hidden="true">Wij helpen je graag<img src="images/pijltjew.svg" alt="Pijltje icoon"></button>
+			<article>
+				<h3>Wij helpen je graag</h3>
+				<a href="#">Help</a>
+				<a href="#">Afgelaste events</a>
+				<a href="#">Verschoven events</a>
+				<a href="#">Verzekering</a>
+			</article>  
+			<button aria-hidden="true">Wat wij ook hebben<img src="images/pijltjew.svg" alt="Pijltje icoon"></button>
+			<article>
+				<h3>Wat wij ook hebben</h3>
+				<a href="#">Collector Tickets</a>
+				<a href="#">Gehoorbescherming</a>
+				<a href="#">Cadeaukaart</a>
+				<a href="#">Parkeren</a>
+				<a href="#">Platinum Tickets</a>
+				<a href="#">Verified Fan</a>
+				<a href="#">Treinretour</a>
+			</article>
+			<button aria-hidden="true">Over ons<img src="images/pijltjew.svg" alt="Pijltje icoon"></button>
+			<article>
+				<h3>Over ons</h3>
+				<a href="#">Branding</a>
+				<a href="#">Vacatures</a>
+			</article>
+			<button aria-hidden="true">Doe zaken met ons<img src="images/pijltjew.svg" alt="Pijltje icoon"></button>
+			<article>
+				<h3>Doe zaken met ons</h3>
+				<a href="#">Adverteren</a>
+				<a href="#">Affiliate worden</a>
+				<a href="#">Zelf een event organiseren</a>
+			</article>
+	  </nav>
+    </footer>
+    <script src="scripts/script.js"></script>
 </body>
-	
 </html>

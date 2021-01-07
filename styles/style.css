@@ -1,63 +1,115 @@
 /* CSS Document */
+
 *, *::after, *::before {
-  box-sizing:border-box;   
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   background-color: #f6f6f6;
   font-family: 'Averta', helvetica, arial, sans-serif;
   width: 100%;
-  color:rgb(38, 38, 38);
+  color: rgb(38, 38, 38);
 }
 
-img{
+img {
   max-width: 100%;
 }
 
 /* Flexbox - Oefening 2 */
+
 header {
   background-image: linear-gradient(90deg, rgb(1, 80, 167), rgb(2, 108, 223), rgb(1, 80, 167));
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-between;
   padding: 1em;
 }
 
-main{
+main {
   padding: 0 1.5em;
 }
 
-.headerpinkpop {
- flex-wrap: nowrap;
-}
-
-.headerpinkpop .logo {
-  max-width: 60%;
+@media (min-width:64em) {
+  main {
+    padding: 2.5em 6em 1.5em 5em;
+  }
 }
 
 header img {
-  flex-grow: 1;
-  max-width: 10%;
-  padding: 0.5em;
+  width: 1.5em;
 }
-.logo{
-  max-width: 80%;
-  flex-grow: 1;
-  padding-right: 5.5em
+
+.logo {
+  width: 12em;
+}
+
+/* Media queries opdracht 3 */
+
+header img::after {
+  content: " / ";
+  margin: 0 0.5em;
+}
+
+header nav button {
+  position: relative;
+  font-size: 1em;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: .25em;
+  appearance: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+header nav button::before {
+  content: "\2630 ";
+  display: inline-block;
+  width: 1em;
+}
+
+header nav.toonMenu button::before {
+  content: "\02C2";
+  color: black;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 4em 0 0;
+  background: white;
+  list-style: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translatex(-100%);
+  transition: .5s;
+  z-index: 50;
+}
+
+header nav.toonMenu ul {
+  transform: translatex(0);
+}
+
+header nav li {
+  margin: 0;
+  padding: 0;
 }
 
 header form {
-  display:flex;
-  flex-grow: 4;
+  display: flex;
   color: white;
   border: 1px solid white;
-  max-height: 2em;
-  margin: 1em 0;
+  max-height: 3em;
+  margin-top: 0.75em;
+  border-radius: 4px;
 }
 
-header form input{
+header form input {
   flex-grow: 1;
   max-width: 80%;
   padding: 0.5em 0 0.5em 1em;
@@ -67,19 +119,23 @@ header form input{
   font-size: inherit;
   background-color: rgba(255, 255, 255, 0.12);
 }
+
 ::placeholder {
   color: white;
+}
+
+header form input:last-of-type{
+  width: 2em;
 }
 
 header form button {
   color: black;
 }
 
-.headerimg{
+.headerimg {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Covid_19_banner_NL_720.jpg');
   position: relative;
   background-size: cover;
-  min-height: 210px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -87,21 +143,23 @@ header form button {
   background-repeat: no-repeat;
   background-position: center center;
   padding: 1.5em;
+  min-height: 56.25vw;
+  
 }
 
 .headerimg h1 {
   margin-bottom: 1em;
 }
 
-.headerimg a{
+.headerimg a {
   align-self: flex-start;
   margin-left: 1.5em;
 }
 
-.headerimgpinkpop{
+.headerimgpinkpop {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/1f1c6245-5735-40ac-89c7-d487329b268c_2019_Pinkpop_photo-Ben-Houdijk_lr-18.jpg');
   background-size: cover;
-  min-height: 310px;
+  min-height: 19em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -110,35 +168,105 @@ header form button {
   background-position: center center;
   padding: 1.5em;
 }
-/* https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
 
-.headerimgpinkpop ul{
+/* https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
+@media (min-width:64em) {
+  .headerimgpinkpop {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/1f1c6245-5735-40ac-89c7-d487329b268c_2019_Pinkpop_photo-Ben-Houdijk_lr-18Desktop.jpg');
+    padding: 2.5em 6em 1.5em 5em;
+  }
+  .headerimg {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 60%, transparent 90%), url("../images/corona1440.jpg");
+    min-height: 30vw;
+  }
+}
+
+
+.headerimgpinkpop ul {
   display: flex;
   list-style-type: none;
   flex-direction: row;
 }
 
-.headerimgpinkpop ul li a::after {
-  content: " / ";
-  /* margin: 0 0.5em; */
-}
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/::after */
+.headerimgpinkpop ul li:not(:last-of-type) a::after {
+  content: " / ";
+  margin: 0 0.25em;
+}
 
+@media (max-width:64em) {
+  header form {
+    flex-grow: 4;
+  }
+  header nav li a {
+    display: block;
+  }
+  header nav li a {
+    padding: 1em 1em 1em 3.5em;
+  }
+}
 
-.concerten ul{
+@media (min-width:64em) {
+  header a {
+    order: -1;
+  }
+
+  header img {
+    order: 4;
+    margin: 0 1em;
+  }
+
+  header nav {
+    flex-grow: 1;
+    padding-top: 1.75em;
+  }
+
+  header nav button {
+    display: none;
+  }
+
+  .logo{
+    padding: 1.5em 1.125em;
+    margin: 0;
+  }
+  
+  header nav ul {
+    position: relative;
+    padding: 0;
+    transform: none;
+    background: none;
+    display: flex;
+  }
+  header nav a {
+    border: none;
+    color: white;
+    padding: 0.5em;
+  }
+  header form input {
+    width: 17em;
+  }
+}
+
+.concerten ul {
   padding: 1.5em;
   list-style-type: none;
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
 }
 
-.cocnerten li{
+.concerten li {
   padding: 0 0 1.5em 0;
 }
 
-h2{
+@media (min-width:64em) {
+  .concerten li {
+    padding: 0 0.5em 1.5em 0.5em;
+    max-width: 50%;
+  }
+}
+
+h2 {
   border-bottom: 4px solid rgb(197, 107, 255);
   width: 2.5em;
   margin: auto;
@@ -150,7 +278,13 @@ h3 {
   margin: 0.5em 0 0.25em 0;
 }
 
-.tickets{
+/* https://stackoverflow.com/questions/2204634/how-to-disable-automatic-links-coloring-without-selecting-a-color */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tickets {
   position: absolute;
   bottom: 1em;
   left: 0;
@@ -163,46 +297,81 @@ h3 {
   font-size: 1em;
 }
 
-.aanbevolen{
+.aanbevolen {
   padding: 1.5em 0;
 }
 
-.aanbevolen h2{
+.aanbevolen h2 {
   margin: auto;
 }
 
-.aanbevolen ul{
-  flex-wrap:wrap;
-  margin-top: 1.5em;
+.aanbevolen article {
+  margin: 1.5em 0.25em 1.5em 0.25em;
   list-style-type: none;
 }
 
-.aanbevolen li {
-  margin: 0 0.25em 1.5em 0.25em;
-}
-
-.aanbevolen img {
-  width: 100%;
-}
-
-.aanbevolen p:first-of-type{
+.aanbevolen p:first-of-type {
   font-size: 1em;
   margin: 0.75em 0 0.5em 0;
 }
 
-.aanbevolen p:nth-of-type(2){
+.aanbevolen p:nth-of-type(2) {
   color: rgb(100, 100, 100);
 }
 
-.populair ul{
-  overflow-x:auto;
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width:64em) {
+  .aanbevolen article {
+    max-width: 30%;
+  }
+}
+
+.meerItems {
+  display: none;
+}
+
+.aanbevolen.view-more .meerItems {
+  display: block;
+}
+
+@media (min-width:64em) {
+  .aanbevolen.view-more .meerItems {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aanbevolen .meerItems {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aanbevolen #laadMeerKnop{
+    display: none;
+  }
+}
+
+.aanbevolen.view-more #laadMeerKnop {
+  display: none;
+}
+
+.populair{
+  padding: 1.5em 0;
+}
+
+.populair ul {
+  overflow-x: auto;
   list-style-type: none;
   display: flex;
   margin-top: 1em;
 }
 
 .populair ul li {
-  flex-shrink:0;
+  flex-shrink: 0;
   margin: 0 0.5em;
 }
 
@@ -218,7 +387,8 @@ h3 {
   border: none;
   font-weight: bold;
 }
-.aanbevolen p{
+
+.aanbevolen p {
   margin: 0.75em 0;
 }
 
@@ -237,6 +407,13 @@ h3 {
   box-shadow: rgba(0, 0, 0, 0.3) 0 5px 20px 0;
 }
 
+@media (min-width:64em) {
+  .menu {
+    display: flex;
+    padding: 0 6em;
+  }
+}
+
 .menu a {
   color: white;
   background-color: rgb(2, 108, 223);
@@ -249,94 +426,110 @@ h3 {
   margin-top: 0.5em;
 }
 
+@media (min-width:64em) {
+  .menu a {
+    order: 5;
+    width: 10%;
+    margin-bottom: 0.5em;
+    padding-top: 0.75em;
+  }
+}
+
 .menu nav ul {
   display: flex;
   flex-direction: row;
   font-weight: 600;
   letter-spacing: 0.15em;
   white-space: nowrap;
-  overflow-x:auto;
+  overflow-x: auto;
 }
 
 .menu nav li {
- padding: 1.25em;
- list-style: none;
+  padding: 1.25em;
+  list-style: none;
 }
 
-
-.lineup{
- padding: 2.5em 0 4em 0;
+.lineup {
+  padding: 2.5em 0 4em 0;
 }
 
-.lineup h2{
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/white-space */
+.lineup h2 {
   font-size: 1.25em;
   letter-spacing: 0.3em;
   border-color: rgb(31, 38, 45);
   white-space: nowrap;
   margin: 1.5em;
 }
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/white-space */
 
-.lineup h3{
+.lineup h3 {
   margin-top: 1.5em;
 }
 
-.lineup ul{
+.lineup ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.lineup li{
+.lineup li {
   margin: 1.5em 0 0 0;
 }
 
-.lineup ul li a::after {
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/::after */
+.lineup ul li:not(:last-of-type) a::after {
   content: " / ";
   margin: 0 0.5em;
   color: rgb(153, 153, 153);
 }
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/::after */
 
-hr{
-  margin-top: 1.5em; 
+hr {
+  margin-top: 1.5em;
 }
 
-.evenementen{
+.evenementen {
   padding: 2.5em 0 4em 0;
 }
 
-.evenementen article{
-  padding-bottom: 24px;
+.evenementen article {
+  padding-bottom: 1.5em;
   border-radius: 4px;
   background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px 3px;
-
+  box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px 3px;
   display: flex;
   flex-direction: column;
 }
 
-.evenementen h2{
+.evenementen h2 {
   border-color: rgb(31, 38, 45);
   margin: 1.5em;
 }
 
-.evenementen ul{
-  display: flex;
-  flex-direction: column;
-  list-style: none;
+.evenementen table {
+  border-collapse: collapse
 }
 
-.evenementen li{
-  padding: 0.5em 2.5em 0.5em 0.5em;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+/* https://stackoverflow.com/questions/10040842/add-border-bottom-to-table-row-tr */
+tr.rij {
   border-bottom: 1px solid rgb(191, 191, 191);
 }
 
-.evenementen button{
+.evenementen table tbody tr td {
+  padding: 0.5em;
+}
+
+.evenementen a {
+  padding: 0.5em 1em 0.5em 1.5em;
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 108, 223);
+  border-radius: 2px;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s;
+  text-decoration: none;
+}
+
+.evenementen button {
   margin-top: 1.5em;
   border: 1px solid rgb(2, 108, 223);
   padding: 0.5em 1em 0.5em 1.5em;
@@ -351,17 +544,17 @@ hr{
   border-radius: 20px;
 }
 
-.gallerij{
+.gallerij {
   padding: 4em 0;
 }
 
-.gallerij h2{
+.gallerij h2 {
   border-color: rgb(31, 38, 45);
   margin: 1.5em;
 }
 
-.gallerij ul{
-  overflow-x:auto;
+.gallerij ul {
+  overflow-x: auto;
   list-style-type: none;
   display: flex;
   padding: 0;
@@ -369,7 +562,7 @@ hr{
 }
 
 .gallerij ul li {
-  flex-shrink:0;
+  flex-shrink: 0;
   margin: 0 0.5em;
 }
 
@@ -377,21 +570,16 @@ hr{
   max-width: 24em;
 }
 
-.over{
-  padding: 2.5em 0. 4em 0;
+.over {
+  padding: 2.5em 0 4em 0;
 }
 
-.over img{
-  margin: -1.5em;
-}
-
-.over h2{
+.over h2 {
   border-color: rgb(31, 38, 45);
   margin: 1.5em;
 }
 
-.over button{
-  border: 1px solid rgb(38, 38, 38);
+.over button {
   margin-top: 1.5em;
   padding: 0.5em 1em 0.5em 1.5em;
   border-radius: 20px;
@@ -399,16 +587,16 @@ hr{
   background-color: rgb(38, 38, 38);
 }
 
-.over h4{
+.over h4 {
   font-size: 1.25em;
   margin: 0 0 1em;
 }
 
-.faq{
+.faq {
   padding: 4em 0;
-} 
+}
 
-.faq button{
+.faq button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -420,57 +608,77 @@ hr{
   width: 100%;
 }
 
-.faq button img{
+.faq button img {
   max-height: 0.5em;
 }
 
-.faq h2{
+.faq h2 {
   letter-spacing: 0.3em;
   border-color: rgb(31, 38, 45);
   margin-left: 1.5em;
   margin-bottom: 1.5em;
 }
 
-.aftellen{
+.aftellen {
   padding: 4em 1em;
-  min-height: 432px;
+  min-height: 27em;
   color: rgb(255, 255, 255);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/a59eb749-ee45-47d6-8593-77996f665603_2019_Pinkpop_photo-Ben-Houdijk_lr-64.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url('../images/a59eb749-ee45-47d6-8593-77996f665603_2019_Pinkpop_photo-Ben-Houdijk_lr-64.jpg');
 }
 
-.aftellen h2{
+@media (min-width:64em) {
+  .aftellen {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/a59eb749-ee45-47d6-8593-77996f665603_2019_Pinkpop_photo-Ben-Houdijk_lr-64\ Desktop.jpg');
+    padding: 2.5em 6em 1.5em 5em;
+  }
+}
+
+.aftellen h2 {
   border-bottom: 4px solid white;
   margin: 1.5em;
 }
 
-footer{
+.aftellen h3{
+  color: white;
+  padding: 0.5em 0.25em;
+  border: 1px solid rgb(191, 191, 191);
+  border-radius: 4px;
+  text-align: center;
+  margin: 0.4em
+}
+
+.aftellen article{
+  display: flex;
+  flex-direction: row;
+}
+
+
+footer {
   background-color: rgb(31, 38, 45);
   flex-shrink: 0;
-  padding: 0 1em;
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: flex-start; 
-  flex-direction: column;
-}
-
-footer .logo{
-  max-width: 60%;
-}
-
-footer h5{
+  padding: 2.5em 1em;
+  display: block;
   color: white;
-  padding-top: 1.5em;
 }
 
-footer img{
-  padding: 0.625em 1.250em 0.625em 0;
+footer .logo {
+  max-width: 20em;
+  padding: 1.5em 0;
 }
 
-footer button{
-  border: 0px;
+footer h5 {
+  padding: 1.5em 0 1em 0;
+}
+
+footer img {
+  padding: 0 1.250em 0.625em 0;
+}
+
+footer nav button {
+  border: 0;
   color: white;
   background-color: transparent;
   display: flex;
@@ -480,4 +688,41 @@ footer button{
   padding: 1em 0.5em;
   width: 100%;
   border-top: 1px solid rgb(191, 191, 191);
+}
+
+footer nav article {
+  display: none;
+}
+
+footer nav article {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width:64em) {
+  footer nav {
+    display: flex;
+    flex-direction: row;
+  }
+  footer nav button {
+    display: none;
+  }
+  footer nav article {
+    position: relative;
+    padding: 0;
+    transform: none;
+    background: none;
+    padding: 0 1em;
+    display: block;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  footer nav article h3 {
+    color: white;
+  }
+  footer nav a {
+    border: none;
+    color: white;
+  }
 }
