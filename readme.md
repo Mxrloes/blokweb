@@ -23,7 +23,6 @@ In de laatste weken heb ik veel aan het responsive maken van de website gewerkt,
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
 <img src="images/eind.png" width="375px" alt="home pagina eindresultaat mobiel">
 Einderesultaat van de homepagina voor mobiel
 
